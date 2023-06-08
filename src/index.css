@@ -1,0 +1,135 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #fff;
+  /* background-color: #242424; */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  /* background-color: #ffffff; */
+  background: linear-gradient(135deg, #ffd5b2, #ffa159);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 50px;
+}
+
+.main {
+  min-width: 100%;
+  min-height: 100%;
+  height: 550px;
+  padding: 30px;
+
+  border-radius: 50px;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0);
+  border-radius: 28px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(203, 189, 189, 0.3);
+}
+
+.main h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+input {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  font-size: 20px;
+}
+
+.add-task {
+  position: relative;
+}
+
+.btn {
+  background-color: #fff;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn i {
+  font-size: 18px;
+}
+
+.panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+select {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  font-size: 20px;
+}
+
+.task-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* font-size: 20px; */
+  color: #000;
+  background-color: #fff;
+  width: 400px;
+  padding-left: 10px;
+  /* margin: 0; */
+}
+
+.task-list button {
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.task-list button i {
+  font-size: 20px;
+  color: #fff;
+}
+
+button-box {
+  /* height: 100%; */
+}
+
+button.check {
+  background-color: rgb(40, 134, 40);
+}
+
+button.trash {
+  background-color: rgb(255, 71, 71);
+}
